@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2beta10
+kind: Config
+
+deploy:
+  helm:
+    releases:
+      - name: prometheus
+        chartPath: prometheus-community/kube-prometheus-stack
+        remote: true
