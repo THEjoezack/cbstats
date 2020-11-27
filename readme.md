@@ -99,3 +99,12 @@ curl.exe -u "elastic:$PASSWORD" -k "https://localhost:9200"
 ```
 
 TODO Kibana
+
+
+
+Presentation:
+
+- Create a local cluster, include Kibana, Beats, Logstash, Streaming data
+- Destroy it
+- Bring it all up again
+- Deploy it to another context
