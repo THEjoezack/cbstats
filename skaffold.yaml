@@ -7,3 +7,16 @@ deploy:
       - name: prometheus
         chartPath: prometheus-community/kube-prometheus-stack
         remote: true
+
+      # Helm depency not working in Skaffold?
+      - name: elastic
+        chartPath: elastic/eck-operator
+        remote: true
+
+      - name: elastic
+        chartPath: elastic
+
+portForward:
+  - resourceType: service
+    resourceName: quickstart-es-http
+    port: 9200
