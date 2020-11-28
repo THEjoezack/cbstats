@@ -11,7 +11,6 @@ Open the following sites in a browser:
 - [Grafana](http://localhost:80) (admin/prom-operator)
 - [Prometheus](http://localhost:9090)
 
-
 ## TODO
 
 - Get basic info about the data showing up in a notebook
