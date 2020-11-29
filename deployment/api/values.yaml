@@ -1,0 +1,12 @@
+replicaCount: 2
+image: "api"
+imageConfig:
+  pullPolicy: "IfNotPresent"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi

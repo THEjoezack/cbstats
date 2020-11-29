@@ -13,7 +13,7 @@ Open the following sites in a browser:
 
 ## TODO
 
-- Get basic info about the data showing up in a notebook
+- Liveness/Readiness
 - Can skaffold install helm repositories?
 - Swap over to minikube
 

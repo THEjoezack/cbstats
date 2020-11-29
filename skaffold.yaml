@@ -1,22 +1,32 @@
 apiVersion: skaffold/v2beta10
 kind: Config
 
+build:
+  local: {}
+  artifacts:
+    - image: api
+      context: api
+
 deploy:
   helm:
     releases:
-      - name: prometheus
-        chartPath: prometheus-community/kube-prometheus-stack
-        remote: true
+      # - name: prometheus
+      #   chartPath: prometheus-community/kube-prometheus-stack
+      #   remote: true
 
-      # Helm depency not working in Skaffold?
-      - name: elastic
-        chartPath: elastic/eck-operator
-        remote: true
+      # # Helm depency not working in Skaffold?
+      # - name: elastic
+      #   chartPath: elastic/eck-operator
+      #   remote: true
 
-      - name: elastic
-        chartPath: elastic
+      # - name: elastic
+      #   chartPath: elastic
 
-portForward:
-  - resourceType: service
-    resourceName: quickstart-es-http
-    port: 9200
+      - name: api
+        chartPath: deployment/api
+        artifactOverrides:
+          image: api
+# portForward:
+#   - resourceType: service
+#     resourceName: quickstart-es-http
+#     port: 9200
