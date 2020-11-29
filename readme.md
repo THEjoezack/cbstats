@@ -3,6 +3,8 @@
 Stats aggregation and prediction for Coding Blocks.
 
 ```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
 skaffold dev --port-forward
 ```
 
