@@ -3,8 +3,11 @@
 Stats aggregation and prediction for Coding Blocks.
 
 ```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo add bitnami https://charts.bitnami.com/bitnami
-
+helm repo add stable https://charts.helm.sh/stable
+helm repo add elastic https://helm.elastic.co
+helm repo update
 skaffold dev --port-forward
 ```
 
