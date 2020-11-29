@@ -15,6 +15,7 @@ Open the following sites in a browser:
 
 - Get basic info about the data showing up in a notebook
 - Can skaffold install helm repositories?
+- Swap over to minikube
 
 ## Questions
 
